@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+:root {
+    --black: #0b2027;
+    --lavender: #DADFF7;
+    --d-lavender: #7C8EDF;
+    --green: #04724D;
+    --blue: #A0C1D1;
+    --red: #EF233C;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--d-lavender)
+}
+
+body.correct {
+    background-color: var(--green);
+}
+
+body.wrong {
+    background-color: var(--red);
+}
+
+header {
+    position:absolute;
+    top:10%;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px -2px;
+}
+
+#q-container  {
+}
+
+#container-head {
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    position:relative;
+}
+
+.timer {
+    position:absolute;
+    right:0;
+}
+
+#icon {
+    width:20px;
+}
+
+#question {
+    margin:auto;
+}
+
+#score {
+    position:absolute;
+    left:0;
+}
+
+#answer-buttons {
+
+}
+
+.button-grid {
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.button {
+    background-color: var(--lavender);
+    border: 1px solid var(--d-lavender);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: var(--black);
+}
+
+.button:hover {
+    border-color: var(--black);
+}
+
+.button.correct {
+    background-color: var(--green);
+    color:white;
+}
+
+.button.wrong {
+    background-color: var(--red);
+    color:white;
+}
+
+.controls {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display:none;
+}
+
+#start-button {
+
+}
+
+#next-button {
+
+}
+
