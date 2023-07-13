@@ -57,7 +57,7 @@ header {
 
 .timer {
     position:absolute;
-    right:0;
+    right:5%;
 }
 
 #icon {
@@ -65,12 +65,12 @@ header {
 }
 
 #question {
-    margin:auto;
+    font-size:1.25em;
 }
 
 #score {
     position:absolute;
-    left:0;
+    left:5%;
 }
 
 #answer-buttons {
