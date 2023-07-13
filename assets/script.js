@@ -3,9 +3,13 @@ var nextButton = document.getElementById('next-button')
 var qContainerElement = document.getElementById('q-container')
 var questionElement = document.getElementById('question')
 var answerButtonsElement = document.getElementById('answer-buttons')
-var timer = document.getElementById('time-left')
 var header = document.getElementById('header')
 var score = document.getElementById('score-num')
+
+var timerEl = document.querySelector(".timer-count")
+var timer = document.getElementById("time-left")
+var timerCount = 30;
+var time;
 
 console.log(timer.innerText)
 console.log(header.innerText)
@@ -18,7 +22,7 @@ startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuest()
-    // keepScore()
+    startTimer()
 })
 
 function startGame() {
@@ -27,6 +31,7 @@ function startGame() {
     currentQuestionIndex = 0
     qContainerElement.classList.remove('hide')
     setNextQuest()
+    startTimer()
 }
 
 function setNextQuest() {
@@ -34,9 +39,17 @@ function setNextQuest() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-// function keepScore() {
-//     if () {}
-// }
+function startTimer () {
+    time = setInterval(function() {
+        timerCount--;
+        timerEl.textContent = timerCount;
+
+        if(timerCount = 0) {
+            resetInterval
+        }
+
+    },1000)
+    }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
