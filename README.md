@@ -1,4 +1,4 @@
-# Homework-4
+# My First Quiz
 
 ## User Story
 AS A coding boot camp student
@@ -22,3 +22,17 @@ THEN the game is over
 
 WHEN the game is over
 THEN I can save my initials and score
+
+## Description
+
+Built a quiz from scratch in order to use new javascript knowledge. The user is provided with a basic quiz with a timer
+and score and is told whether or not their answer is correct. The user is also able to log in their score and check in the
+console to see it. The questions and answers are nonsensical but serve their function.
+
+## Link and Screenshot
+![Screenshot of an in progress quiz](./assets/images/quizScreenshot.png)
+https://achurale.github.io/My-First-Quiz/
+
+## Credits
+
+Thank you to my fellow classmates as per usual, to tutor Alexis San Javier, and to the YouTube channel Web Dev Simplified for getting me started.

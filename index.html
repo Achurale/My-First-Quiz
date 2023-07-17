@@ -22,11 +22,12 @@
           <div id="question">Question!</div>
           <div class="timer">
             <img src="./assets/images/clock.jpg" alt="" id="icon">
-            <span id="time-left"></span>s
-          
+            <span id="time-left">30</span>s
           </div>
+
           <div id="score">Score:<span id="score-num">0</span></div>
         </div>
+
         <div id="answer-buttons" class="button-grid">
           <button class="button">Answer 1</button>
           <button class="button">Answer 2</button>
@@ -34,32 +35,17 @@
           <button class="button">Answer 4</button>
         </div>
       </div>
+      
       <div class="controls">
         <button id="start-button" class="start-button button">Start!</button>
         <button id="next-button" class="next-button button hide">Next!</button>
       </div>
     </div>
-<!-- 
-    <div id="display-container">
-      <div class="header">
-        <div class="number-of-count">
-          <span class="number-f-question"> 1/10</span>
-        </div>
-        <div class="timer-div">
-          <img src="icon.png" alt="" id="icon">
-          <span class="time-left">10s</span>
-        </div>
-      </div>
-      <div id="container">
-        Questions and Answers
-      </div>
-      <button id="next-button">Next</button>
-    </div>
-    <div class="score-container hide">
-      <div class="user-score">Demo Score</div>
-      <button id="restart">Restart</button>
-    </div> -->
 
+    <form id="submitScore">
+      <input id="user-name" placeholder="Insert name">
+      <button id="submit-button">Submit</button>
+    </form>
 
     <script src="./assets/script.js"></script>
   </body>
